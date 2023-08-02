@@ -1,0 +1,40 @@
+@import 'src/styles.scss';
+@import "~devextreme/dist/css/dx.common.css";
+@import "~devextreme/dist/css/dx.light.css";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 42vw;
+    height: auto;
+    height: 300px;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    border: 1px solid $lightBlue;
+    border-radius: 8px;
+    box-shadow: 0px 5px 5px $shadow;
+}
+
+.formdiv{
+    width: 100%;
+}
+
+.form-control{
+    margin: 10px;
+    width: 95%;
+}
+
+.title{
+    background-color: $lightBlue;
+    color: white;
+    width: 100%;
+    margin: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.submit{
+    margin-left: 10px;
+}

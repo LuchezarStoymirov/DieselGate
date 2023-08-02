@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{36D58A95-CC33-4BC3-ABE3-D058F4F0DAEF}|https">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="DieselgateApp/Program.cs">
+    <Files>
+      <File FileName="DieselgateApp/Models/AppDbContext.cs" Line="1" Column="1" />
+      <File FileName="DieselgateApp/appsettings.json" Line="1" Column="1" />
+      <File FileName="DieselgateApp/Program.cs" Line="1" Column="1" />
+      <File FileName="DieselgateApp/Controllers/UserController.cs" Line="1" Column="1" />
+      <File FileName="DieselgateApp/Controllers/ClaimController.cs" Line="106" Column="1" />
+      <File FileName="DieselgateApp/Models/User.cs" Line="8" Column="6" />
+      <File FileName="DieselgateApp/Models/Claim.cs" Line="11" Column="48" />
+      <File FileName="DieselgateApp/Migrations/AppDbContextModelSnapshot.cs" Line="1" Column="1" />
+      <File FileName="DieselgateApp/Migrations/20230801203712_InitialCreat34124123131333e.cs" Line="1" Column="1" />
+      <File FileName="DieselgateApp/Migrations/20230801200903_InitialCreat3333e.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DieselgateApp" expanded="True">
+            <Node name="DieselgateApp" expanded="True">
+              <Node name="Models" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.DieselgateApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

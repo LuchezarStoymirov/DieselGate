@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="formdiv">
+    <div class="col-md-12">
+      <h2 class="title">{{ isEditMode ? "Update" : "Create" }} Claim</h2>
+      <form>
+        <div class="form-group">
+          <label for="title" style="margin-left: 10px">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            [(ngModel)]="claim.title"
+            name="title"
+          />
+        </div>
+        <div class="form-group">
+          <label for="claimDetails" style="margin-left: 10px"
+            >Claim Details</label
+          >
+          <textarea
+            class="form-control"
+            id="claimDetails"
+            [(ngModel)]="claim.claimDetails"
+            name="claimDetails"
+          ></textarea>
+        </div>
+        <dx-button
+          class="submit"
+          type="default"
+          text="{{ isEditMode ? 'Update' : 'Create' }} Claim"
+          (onClick)="confirm($event)"
+        ></dx-button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+@import 'src/styles.scss';
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: lightgray;
+    max-width: 4000px;
+}
+
+.header{
+    background-color: $lightBlue;
+    width: 100vw;
+    height: 50px;
+    margin: 0;
+}
+
+.title{
+    margin-left: 20px;
+    color: white;
+}

@@ -1,0 +1,31 @@
+<div class="container">
+  <h2 class="title">Claim List</h2>
+  <dx-list
+    [dataSource]="claims"
+    showScrollbar="always"
+    [height]="400"
+    [searchEnabled]="true"
+    searchExpr="title"
+  >
+    <div *dxTemplate="let claim of 'item'">
+      <h3 class="claim-title">{{ claim.title || 'No Title Provided' }}</h3>
+      <p>{{ claim.claimDetails }}</p>
+      <p>Status: {{ claim.claimStatus }}</p>
+      <dx-button
+        *ngIf="claim.claimStatus != 'Resolved'"
+        text="Edit"
+        type="default"
+        (onClick)="editClaim(claim)"
+      ></dx-button>
+      <dx-button
+        text="Delete"
+        type="danger"
+        *ngIf="claim.id"
+        (onClick)="deleteClaim(claim.id)"
+      ></dx-button>
+    </div>
+  </dx-list>
+  <div class="error" *ngIf="error">
+    <p>An error occurred while loading the claims. Please try again later.</p>
+  </div>
+</div>

@@ -1,0 +1,84 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div *ngIf="!showRegister">
+        <h2>Login</h2>
+        <form>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              [(ngModel)]="user.username"
+              name="username"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              [(ngModel)]="user.password"
+              name="password"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary" (click)="login()">
+            Login
+          </button>
+        </form>
+        <button type="button" class="btn btn-link" (click)="toggleForm()">
+          Switch to Register
+        </button>
+      </div>
+
+      <div *ngIf="showRegister">
+        <h2>Register</h2>
+        <form>
+          <div class="form-group">
+            <label for="usernameReg">Username</label>
+            <input
+              type="text"
+              class="form-control"
+              id="usernameReg"
+              [(ngModel)]="newUser.username"
+              name="usernameReg"
+            />
+          </div>
+          <div class="form-group">
+            <label for="passwordReg">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="passwordReg"
+              [(ngModel)]="newUser.password"
+              name="passwordReg"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="emailReg">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="emailReg"
+              [(ngModel)]="newUser.email"
+              name="emailReg"
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary"
+            (click)="register($event)"
+          >
+            Register
+          </button>
+        </form>
+        <button type="button" class="btn btn-link" (click)="toggleForm()">
+          Switch to Login
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
